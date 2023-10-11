@@ -1,0 +1,35 @@
+{
+    "name": "springfieldclinic/mailgun-tools",
+    "description": "Adds Mailgun tools to Artisan.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Christopher Graham",
+            "email": "chgraham@springfieldclinic.com"
+        }
+    ],
+    "require": {
+        "php": "^8",
+        "illuminate/support": "^8|^9|^10",
+        "mailgun/mailgun-php": "^3.6",
+        "nyholm/psr7": "^1.8@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "SpringfieldClinic\\MailgunTools\\": "src/"
+        }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "SpringfieldClinic\\MailgunTools\\MailgunToolsServiceProvider"
+        ]
+      }
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
