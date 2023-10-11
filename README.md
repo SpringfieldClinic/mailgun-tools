@@ -15,6 +15,6 @@ Publish config file
 php artisan vendor:publish --provider="SpringfieldClinic\MailgunTools\MailgunToolsServiceProvider"
 ```
 
-Set up config file `config/mailgun-tools.php`
+Add the necessary environment variables to your `.env` that are mentioned in `config/mailgun-tools.php`
 
 Done!
